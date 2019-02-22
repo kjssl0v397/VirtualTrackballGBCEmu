@@ -14,7 +14,7 @@ public class VirtualTrackball extends RelativeLayout {
 
     private Context context;
     private CircleTrackball ball;
-    private ActionTrackball actionTrackball;
+    private IAction actionTrackball;
 
     public VirtualTrackball(Context context) {
         super(context);
@@ -37,11 +37,11 @@ public class VirtualTrackball extends RelativeLayout {
         initView(context);
     }
 
-    public ActionTrackball getActionTrackball() {
+    public IAction getActionTrackball() {
         return actionTrackball;
     }
 
-    public void setActionTrackball(ActionTrackball actionTrackball) {
+    public void setActionTrackball(IAction actionTrackball) {
         this.actionTrackball = actionTrackball;
     }
 
