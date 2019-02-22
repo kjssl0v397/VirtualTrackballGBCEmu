@@ -10,35 +10,39 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 
-public class VirtualKeyboard extends RelativeLayout {
+public class VirtualTrackball extends RelativeLayout {
 
     private Context context;
     private CircleTrackball ball;
     private ActionTrackball actionTrackball;
 
-    public VirtualKeyboard(Context context) {
+    public VirtualTrackball(Context context) {
         super(context);
         initView(context);
     }
 
-    public VirtualKeyboard(Context context, AttributeSet attrs) {
+    public VirtualTrackball(Context context, AttributeSet attrs) {
         super(context, attrs);
         initView(context);
     }
 
-    public VirtualKeyboard(Context context, AttributeSet attrs, int defStyleAttr) {
+    public VirtualTrackball(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initView(context);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public VirtualKeyboard(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public VirtualTrackball(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         initView(context);
     }
 
     public ActionTrackball getActionTrackball() {
         return actionTrackball;
+    }
+
+    public void setActionTrackball(ActionTrackball actionTrackball) {
+        this.actionTrackball = actionTrackball;
     }
 
     private void initView(Context context) {
