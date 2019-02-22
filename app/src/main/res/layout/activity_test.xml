@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.main.TestActivity">
-    <com.main.VirtualKeyboard
+    <com.zlt.gbc.VirtualKeyboard
         android:layout_centerInParent="true"
         android:background="@drawable/bg_trackball"
         android:layout_width="200dp"
         android:layout_height="200dp">
-        <com.main.CircleTrackball
+        <com.zlt.gbc.CircleTrackball
             android:background="@drawable/bg_circle_trackball"
             android:layout_centerInParent="true"
             android:layout_width="75dp"
             android:layout_height="75dp" />
-    </com.main.VirtualKeyboard>
+    </com.zlt.gbc.VirtualKeyboard>
 </RelativeLayout>
