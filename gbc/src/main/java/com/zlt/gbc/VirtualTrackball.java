@@ -66,6 +66,9 @@ public class VirtualTrackball extends RelativeLayout {
                 Log.e("VirtualKeyPos","UP");
                 ball.setX(getPivotX()-ball.getWidth()/2);
                 ball.setY(getPivotY()-ball.getHeight()/2);
+                if (actionTrackball!=null){
+                    actionTrackball.onCancel();
+                }
                 break;
         }
         return true;
@@ -150,9 +153,10 @@ public class VirtualTrackball extends RelativeLayout {
         void onBottomLeft();
         void onBottomRight();
         void onCenter();
+        void onCancel();
     }
 
-    public class ActionTrackball implements IAction{
+    public abstract class ActionTrackball implements IAction{
         public static final int ACTION_TOPLEFT = 1;
         public static final int ACTION_TOP = 2;
         public static final int ACTION_TOPRIGHT = 3;
@@ -162,49 +166,6 @@ public class VirtualTrackball extends RelativeLayout {
         public static final int ACTION_BOTTOMLEFT = 7;
         public static final int ACTION_BOTTOM = 8;
         public static final int ACTION_BOTTOMRIGHT = 9;
-        @Override
-        public void onTop() {
 
-        }
-
-        @Override
-        public void onBottom() {
-
-        }
-
-        @Override
-        public void onLeft() {
-
-        }
-
-        @Override
-        public void onRight() {
-
-        }
-
-        @Override
-        public void onTopLeft() {
-
-        }
-
-        @Override
-        public void onTopRight() {
-
-        }
-
-        @Override
-        public void onBottomLeft() {
-
-        }
-
-        @Override
-        public void onBottomRight() {
-
-        }
-
-        @Override
-        public void onCenter() {
-
-        }
     }
 }
