@@ -213,6 +213,7 @@ public class VirtualTrackball extends RelativeLayout {
         if (ball==null)
             ball = (CircleTrackball) getChildAt(1);
         setBackgroundResource(backgroundDpad);
+        pad.resizePad(getWidth()/3);
         ball.setVisibility(GONE);
         pad.setVisibility(VISIBLE);
         isDpad = true;
