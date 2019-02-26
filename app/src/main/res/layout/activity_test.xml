@@ -10,8 +10,8 @@
         android:id="@+id/virtualTrackball"
         android:layout_centerInParent="true"
         android:background="@drawable/bg_trackball"
-        android:layout_width="210dp"
-        android:layout_height="210dp">
+        android:layout_width="120dp"
+        android:layout_height="120dp">
         <com.main.CircleTrackball
             android:id="@+id/ball"
             android:background="@drawable/bg_circle_trackball"

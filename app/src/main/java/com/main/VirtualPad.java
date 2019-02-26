@@ -87,4 +87,16 @@ public class VirtualPad extends RelativeLayout {
         dpadRight.setBackgroundResource(res);
     }
 
+    public void resizePad(int size){
+        setSize(dpadDown,size);
+        setSize(dpadUp,size);
+        setSize(dpadLeft,size);
+        setSize(dpadRight,size);
+    }
+
+    private void setSize(ImageView v,int size){
+        v.getLayoutParams().width = size;
+        v.getLayoutParams().height = size;
+    }
+
 }

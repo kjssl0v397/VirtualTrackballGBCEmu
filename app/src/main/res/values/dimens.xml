@@ -41,6 +41,7 @@
     <dimen name="slidermenu_width">280dp</dimen>
 
     <dimen name="toolbar_heght">50dp</dimen>
+    <dimen name="size40">40dp</dimen>
     <dimen name="game_item_avatar_size">55dp</dimen>
 
 </resources>
