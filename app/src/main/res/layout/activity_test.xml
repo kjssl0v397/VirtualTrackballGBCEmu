@@ -3,17 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/blue"
     android:layout_height="match_parent"
     tools:context="com.main.TestActivity">
-    <com.zlt.gbc.VirtualKeyboard
+    <com.main.VirtualTrackball
+        android:id="@+id/virtualTrackball"
         android:layout_centerInParent="true"
         android:background="@drawable/bg_trackball"
-        android:layout_width="200dp"
-        android:layout_height="200dp">
-        <com.zlt.gbc.CircleTrackball
+        android:layout_width="210dp"
+        android:layout_height="210dp">
+        <com.main.CircleTrackball
+            android:id="@+id/ball"
             android:background="@drawable/bg_circle_trackball"
             android:layout_centerInParent="true"
             android:layout_width="75dp"
             android:layout_height="75dp" />
-    </com.zlt.gbc.VirtualKeyboard>
+    </com.main.VirtualTrackball>
+    <Button
+        android:onClick="change"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/virtualTrackball"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

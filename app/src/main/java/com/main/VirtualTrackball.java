@@ -1,12 +1,16 @@
-package com.zlt.gbc;
+package com.main;
 
 import android.content.Context;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+
+import com.zlt.gbclibrary.R;
 
 
 public class VirtualTrackball extends RelativeLayout {
@@ -110,7 +114,7 @@ public class VirtualTrackball extends RelativeLayout {
                     break;
                 case ActionTrackball.ACTION_TOP:
                     if (pad!=null)
-                        pad.setBackgroundClicked(action);
+                        pad.setBackgroundClicked(R.id.dpadUp);
                     actionTrackball.onTop();
                     break;
                 case ActionTrackball.ACTION_TOPRIGHT:
@@ -119,7 +123,7 @@ public class VirtualTrackball extends RelativeLayout {
                     break;
                 case ActionTrackball.ACTION_LEFT:
                     if (pad!=null)
-                        pad.setBackgroundClicked(action);
+                        pad.setBackgroundClicked(R.id.dpadLeft);
                     actionTrackball.onLeft();
                     break;
                 case ActionTrackball.ACTION_CENTER:
@@ -127,7 +131,7 @@ public class VirtualTrackball extends RelativeLayout {
                     break;
                 case ActionTrackball.ACTION_RIGHT:
                     if (pad!=null)
-                        pad.setBackgroundClicked(action);
+                        pad.setBackgroundClicked(R.id.dpadRight);
                     actionTrackball.onRight();
                     break;
                 case ActionTrackball.ACTION_BOTTOMLEFT:
@@ -136,7 +140,7 @@ public class VirtualTrackball extends RelativeLayout {
                     break;
                 case ActionTrackball.ACTION_BOTTOM:
                     if (pad!=null)
-                        pad.setBackgroundClicked(action);
+                        pad.setBackgroundClicked(R.id.dpadDown);
                     actionTrackball.onBottom();
                     break;
                 case ActionTrackball.ACTION_BOTTOMRIGHT:

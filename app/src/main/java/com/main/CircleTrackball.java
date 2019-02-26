@@ -1,4 +1,4 @@
-package com.zlt.gbc;
+package com.main;
 
 import android.content.Context;
 import android.os.Build;
@@ -12,11 +12,11 @@ public class CircleTrackball extends View {
         super(context);
     }
 
-    public CircleTrackball(Context context, AttributeSet attrs) {
+    public CircleTrackball(Context context,  AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CircleTrackball(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CircleTrackball(Context context,  AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
